@@ -190,13 +190,6 @@ PRODUCT_PACKAGES += \
     blkid \
     resize2fs
 
-# strongSwan
-PRODUCT_PACKAGES += \
-    charon \
-    libcharon \
-    libhydra \
-    libstrongswan
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/strongswan/strongswan.conf:system/etc/strongswan.conf
 
@@ -301,7 +294,6 @@ PRODUCT_PACKAGES += \
     monitor.conf \
     capture_oprofile.sh \
     liboprofiledaemon \
-    engpc \
     hcidump \
     libbt-vendor \
     librilutils \
