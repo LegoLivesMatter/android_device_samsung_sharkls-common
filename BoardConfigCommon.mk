@@ -252,7 +252,7 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery/recovery.fstab
 
 #######################################################
 # TWRP
-RECOVERY_VARIANT := twrp
+#RECOVERY_VARIANT := twrp
 
 # Display
 TW_THEME := portrait_hdpi
