@@ -59,3 +59,6 @@ on property:init.svc.macloader=stopped
 on property:init.svc.dhcpcd_ibss=running
     start olsrd
 
+# Insert sprdwl module when wcnd starts
+on property:init.svc.wcnd-cali=running
+	insmod /lib/modules/sprdwl.ko
