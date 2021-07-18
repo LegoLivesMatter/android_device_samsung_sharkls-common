@@ -29,6 +29,6 @@ SPRD_MODULES:
 	make $(MAKE_FLAGS) -C $(WLAN_DRIVER_PATH) SPRDWL_PLATFORM=sc8830 USING_PP_CORE=2 BUILD=$(MBUILD_VAR) KDIR=$(KERNEL_OUT) CROSS_COMPILE=$(KERNEL_CROSS_COMPILE)
 	mv $(GPU_DRIVER_PATH)/mali.ko $(KERNEL_MODULES_OUT)
 	mv $(WLAN_DRIVER_PATH)/sprdwl.ko $(KERNEL_MODULES_OUT)
-	ln -sf /lib/modules/mali.ko $(PRODUCT_OUT)/system/lib/modules/mali.ko
-	ln -sf /lib/modules/sprdwl.ko $(PRODUCT_OUT)/system/lib/modules/sprdwl.ko
+	cp $(KERNEL_MODULES_OUT)/mali.ko $(PRODUCT_OUT)/system/lib/modules/mali.ko
+	cp $(KERNEL_MODULES_OUT)/sprdwl.ko $(PRODUCT_OUT)/system/lib/modules/sprdwl.ko
 
